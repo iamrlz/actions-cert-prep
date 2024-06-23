@@ -5,5 +5,5 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: info
-        runs:
+        run:
           echo "This is a push event on all the branches"
