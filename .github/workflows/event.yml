@@ -1,9 +1,8 @@
 name: Push Events
 on:
- push:
-   branches:
-    - main
-    - test
+ issues:
+   types:
+     - opened 
 jobs:
   show-info:
       runs-on: ubuntu-latest
