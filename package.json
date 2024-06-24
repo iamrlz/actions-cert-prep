@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "echo 'No build script defined'"
+    "build": "echo 'No build script defined'",
+    "deploy": "echo 'No deploy script defined'"
   },
   "keywords": [],
   "author": "",
