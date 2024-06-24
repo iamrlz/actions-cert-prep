@@ -1,10 +1,10 @@
 name: node.js CI
 on: [push]
 
-jobs: #<-- start the jobs encapsulation
-  build: #<--start the build job encapsulation
+jobs:
+  build:
     runs-on: ubuntu-latest
-    steps: # <-- start of steps encapsulation with 'build' job
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup node.js
@@ -26,7 +26,3 @@ jobs: #<-- start the jobs encapsulation
         with:
           name: npm-logs
           path: ~/.npm/_logs
-        
-    #<-- end of steps encapsulation within 'build' job
-  #<--end of 'build' job encapulation
-#end of job encpsulation
