@@ -1,0 +1,11 @@
+name: Example 2 Wokflow
+on: [push]
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Use API KEY
+        run: echo "API_KEY is ${{ secrets.API_KEY }}
