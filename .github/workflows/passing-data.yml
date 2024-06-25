@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download data artifacts
-      uses: actions/downlaod-articats@v2
+      uses: actions/download-articats@v2
       with:
         name: data-artifacts
         path: data/
