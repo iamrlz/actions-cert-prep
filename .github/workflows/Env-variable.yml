@@ -1,0 +1,12 @@
+name: Enviroment Variable Example
+on: [push]
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    env:
+      APP_MOD: ${{ vars.APP_MOD}}
+      
+    steps:
+     - name: Dislay Enviroment Variable 
+       run: echo "rhis is $APP_MOD mode"
